@@ -274,7 +274,7 @@ export default class SafeAreaView extends React.Component<Props, State> {
 // note(brentvatne): it is unclear to me why this function exists but I will
 // leave it
 function getResolvedDimensions() {
-  const { width, height } = Dimensions.get('window');
+  const { width, height } = Dimensions.get('screen');
   if (width === 0 && height === 0) return Dimensions.get('screen');
   return { width, height };
 }
