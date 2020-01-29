@@ -29,7 +29,7 @@ export default function<T: {}>(
     constructor() {
       super();
 
-      const isLandscape = isOrientationLandscape(Dimensions.get('window'));
+      const isLandscape = isOrientationLandscape(Dimensions.get('screen'));
       this.state = { isLandscape };
     }
 
@@ -45,8 +45,8 @@ export default function<T: {}>(
       }
     }
 
-    handleOrientationChange = ({ window }: { window: WindowDimensions }) => {
-      const isLandscape = isOrientationLandscape(window);
+    handleOrientationChange = ({ screen }) => {
+      const isLandscape = isOrientationLandscape(screen);
       this.setState({ isLandscape });
     };
 

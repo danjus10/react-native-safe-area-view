@@ -23,7 +23,7 @@ const IPADPRO11_HEIGHT = 1194;
 const IPADPRO129_HEIGHT = 1024;
 const IPADPRO129_WIDTH = 1366;
 
-const { height: D_HEIGHT, width: D_WIDTH } = Dimensions.get('window');
+const { height: D_HEIGHT, width: D_WIDTH } = Dimensions.get('screen');
 
 const { PlatformConstants = {} } = NativeModules;
 const { minor = 0 } = PlatformConstants.reactNativeVersion || {};
